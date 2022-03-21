@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">GESTIÓN DE USUARIOS</h1>
+    <form class="form">
+      <div class="form__container">
+        <div class="form__field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" autocomplete="off">
+          <input type="hidden" id="idhide" value="">
+        </div>
+        <div class="form__field">
+          <label for="dni">DNI</label>
+          <input type="number" id="dni" autocomplete="off">
+        </div>
+        <div class="form__field">
+          <label for="edad">Edad</label>
+          <input type="number" id="edad">
+        </div>
+        <div class="form__field">
+          <label for="genero">Género</label>
+          <select name="genero" id="genero">
+            <option value=""></option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Otros">Otros</option>
+          </select>
+        </div>
+        <div class="form__field">
+          <label for="correo">Correo</label>
+          <input type="text" id="correo" autocomplete="off">
+        </div>
+        <div class="form__field">
+          <label for="telefono">Telefono</label>
+          <input type="tel" id="telefono" autocomplete="off">
+        </div>
+        <div class="form__field">
+          <label for="pais">País</label>
+          <input type="text" id="pais" autocomplete="off">
+        </div>
+        <div class="form__field">
+          <label for="estado">Estado</label>
+          <select name="estado" id="estado">
+            <option value=""></option>
+            <option value="Soltero">Soltero</option>
+            <option value="Casado">Casado</option>
+            <option value="Viudo">Viudo</option>
+            <option value="Divorciado">Divorciado</option>
+          </select>
+        </div>
+      </div>
+      <button class="form__btn">
+        <span class="iconify" data-icon="akar-icons:plus"></span>
+        <span class="form__btn--label">Agregar</span>
+      </button>
+      <button id="guardar" class="form__btn--guardar">Guardar</button>
+      <button id="cancelar" class="form__btn--cancelar">Cancelar</button>
+    </form>
+    <div class="container__list"></div>
+  </main>
+  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
