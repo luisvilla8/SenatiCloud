@@ -1,0 +1,2 @@
+# SenatiCloud
+Ejemplo práctico SenatiCloud
